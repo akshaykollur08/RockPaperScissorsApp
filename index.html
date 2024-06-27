@@ -1,0 +1,36 @@
+<!--This is the html of the RockPaperScissors App. It is very simple. The player plays against the computer. If the player selects a winning
+choice, then the winnings count is updated. If the player loses the round, then the losing count is updated. If they tie then 
+the tie count is updated.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors App</title>
+    <!--Stylesheet for component styling-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock-Paper-Scissors</h1>
+    <!--Each time one of the choices are selected by the player, the game begins. The computer choice is checked with the player choice
+    to see the outcome of the round.-->
+    <div class="choices">
+      <button onclick="playGame('rock')">🪨</button>
+      <button onclick="playGame('paper')">📃</button>
+      <button onclick="playGame('scissors')">✂️</button>
+    </div>
+    <!--This is to help display the outcome of what the party did in the round and results of the round.-->
+    <div id="playerDisplay">Player: </div>
+    <div id="computerDisplay">Computer: </div>
+    <div id="resultDisplay"></div>
+    
+    <!--This is to help keep the scoring in place to count number of wins, losses, and ties occuring in a session.-->
+    <div class="score">
+    <div id="winsCount">W: 0</div>
+    <div id="tiesCount">T: 0</div>
+    <div id="lossesCount">L: 0</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

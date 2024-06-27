@@ -1,0 +1,106 @@
+/* Styling for HTML elements. */
+body
+{
+    font-family: monospace;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: aliceblue;
+
+}
+
+h1
+{
+    font-size: 2rem;
+    width: 75%;
+    text-align: center;
+    display: inline;
+    border: 4px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: tomato;
+}
+
+/* choices class is used for the choice buttons of rock, paper, and scissors */
+.choices
+{
+    /*25px to the top and bottom*/
+    margin:25px;
+
+}
+
+/* The button styling which makes it a circular shape with the background color of a shade of yellow.
+It also puts the emoji image of the rock, paper, and scissors in the center.
+*/
+.choices button
+{
+    font-size: 5.5rem;
+    min-width: 50px;
+    /*0 px on the top and bottom, 5px on the sides*/
+    margin: 0 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: hsl(51, 100%, 50%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+/* Hover pseudo class utilization. When hovering over either the rock, paper, or scissors buttons, the color shade is lighter.   */
+.choices button:hover
+{
+    background-color: hsl(51, 100%, 70%);
+}
+
+/*Player, computer, and result of round displays for the specified Id's.*/
+#playerDisplay, #computerDisplay
+{
+    font-size: 2rem;
+}
+
+
+#resultDisplay
+{
+    font-size: 4rem;
+    /*30px to the top and bottom, 0px to the sides*/
+    margin: 30px;
+}
+
+/* Score designed to be in the top left stacked on top one another. */
+.score
+{
+    font-size: 1rem;
+    padding-left: 15px;
+    position: fixed;
+    width:100%;
+    margin: 10px;
+    display: flow-root;
+    font-weight: normal;
+
+}
+
+#winsCount, #lossesCount, #tiesCount
+{
+    margin: 10px 0;
+}
+
+/*Color coordination for wins, losses, and ties*/
+.greenText, #winsCount
+{
+    color: forestgreen;
+}
+
+.redText, #lossesCount
+{
+    color: tomato;
+}
+
+.neutralText, #tiesCount
+{
+    color: slategray;
+}
+
